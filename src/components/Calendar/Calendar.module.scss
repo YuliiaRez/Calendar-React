@@ -1,0 +1,53 @@
+@import "./../../common/styles/vars";
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.today {
+    color: red;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+
+.xMonth {
+    color: white;
+}
+article {
+    display: flex;
+    width: 600px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid $calendarMain;
+    color: grey;
+    //margin: 150px;
+    section:first-child {
+        display: flex;
+        flex-direction: column;
+        //justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        height: 250px;
+        color: white;
+        background-color: $calendarMain;
+        margin-right: auto;
+    }
+    div:nth-child(2) {
+        font-size: 8em;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    section:nth-child(2) {
+        font-size: 1.5em;
+        padding: 10%;
+    }
+
+    caption {
+        color: $calendarMain;
+    }
+    th {
+        color: red;
+    }
+}
