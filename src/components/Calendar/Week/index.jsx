@@ -5,18 +5,17 @@ import PropTypes from 'prop-types';
 
 const getDaysOfWeek = (week, year) => {
   const startOfWeek = parse(`${year} ${week}`, 'Y w', new Date());
-
   const days = [];
   for (let i = 0; i < 7; ++i) {
     const dateIndex = addDays(startOfWeek, i);
-    days.push(<CalendarDate day={dateIndex.getDate()} month={dateIndex.getMonth()} />);
+    days.push(<CalendarDate day={dateIndex.getDate()} month={dateIndex.getMonth()} curYear={dateIndex.getFullYear()} xMonth={xMonth} />);
   }
   return days;
 };
-
+let xMonth = 0;
 function Week(props) {
-  const { week, year } = props;
-
+  const { week, year, date } = props;
+  xMonth = date.getMonth();
   return <tr>{getDaysOfWeek(week, year)}</tr>;
 }
 

@@ -9,7 +9,7 @@ const getWeeks = date => {
 
   const weeks = [];
   for (let i = firstWeek; i < firstWeek + getWeeksInMonth(date); i++) {
-    weeks.push(<Week key={i} week={i} year={year} />);
+    weeks.push(<Week key={i} week={i} year={year} date={date} />);
   }
 
   return weeks;

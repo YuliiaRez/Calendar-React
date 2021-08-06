@@ -14,13 +14,13 @@
 .xMonth {
     color: white;
 }
-article {
+.container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
-    //max-width: 800px;
-    //min-width: 200px;
-    //min-height: 100px;
+    max-width: 600px;
+    min-width: 150px;
+    min-height: 100px;
     height: auto;
     justify-content: center;
     align-items: center;
@@ -36,16 +36,17 @@ article {
         flex-grow: 1;
         flex-shrink: 1;
         min-height: 50%;
-        padding: 10%;
+        padding: 15px;
     }
-    section:first-child {
+    .dayOfWeek {
         color: white;
         background-color: $calendarMain;
     }
-    div:nth-child(2) {
+    .dayCurrent {
         font-size: 8em;
         margin-top: 100px;
         margin: auto;
+        color: white;
     }
     section:nth-child(2) {
         font-size: 1.5em;
@@ -57,5 +58,9 @@ article {
     }
     th {
         color: red;
+    }
+    .dayNumbers {
+        font-size: 16px;
+        text-align: center;
     }
 }
