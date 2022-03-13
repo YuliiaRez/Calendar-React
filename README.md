@@ -1,3 +1,18 @@
+Style the calendar (https://github.com/pecourses/pe20211-react-app/tree/main/src/components/Calendar) according to the layout. Layout in the application. It is advisable to use SASS (scss).
+Notes: do not display the days of another month, highlight the current date (you can use isSameDay, isSameMonth).
+Refactor the code if necessary.
+
+
+Used technologies:
+https://www.npmjs.com/package/date-fns
+
+https://www.npmjs.com/package/prop-types
+
+Calendar-template.png
+Image
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
